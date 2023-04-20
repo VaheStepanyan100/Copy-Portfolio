@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,700&family=Roboto:ital,wght@0,300;0,400;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="detailsPopup.js" defer></script>
+    <title>Portfolio Design Layout</title>
+  </head>
+  <body id="portfolio">
+    <header class="header">
+      <div class="header-nav flex-row">
+        <div class="rotate"><a href="#" class="logo">My Logo</a></div>
+        <nav class="hamburgerIcon active">
+          <img src="assets/Icon - Menu.png" alt="navbar menu toggle" />
+        </nav>
+      </div>
+      <nav class="menu-list-items">
+        <ul>
+          <li><img src="assets/Icon.png" alt="close-X" /></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro flex-column">
+        <h1>
+          I’m Alexandra.<br />Glad to see<br />
+          you!
+        </h1>
+        <p>
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hesitate to contact
+          me.
+        </p>
+
+        <section class="connect flex-column">
+          <h2 class="contactTitle"><a href="#">LET’S CONNECT</a></h2>
+          <ul class="connect-ul flex-row">
+            <li>
+              <a href="#"><img src="assets/Vector.svg" alt="Twitter icon" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/Linkedin icon-2.svg" alt="LinkdIn icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/Vector-2.svg" alt="connect icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/Vector-3.svg" alt="GitHub icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/Vector-4.svg" alt="connect icon"
+              /></a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="works-section"></section>
+
+      <section id="about" class="about-section flex-row">
+        <article class="about-article">
+          <div class="about-myself">
+            <h2>About Myself</h2>
+            <p>
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website. Look through some of my work and experience!
+              If you like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
+            <h2 class="contactTitle"><a href="#">LET’S CONNECT</a></h2>
+            <ul class="lets-connect flex-row">
+              <li>
+                <a href="#"
+                  ><img src="assets/Vector.svg" alt="Twitter icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/Linkedin icon-2.svg" alt="LinkedIn icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/Vector-2.svg" alt="connect-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/Vector-3.svg" alt="GitHub icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/Vector-4.svg" alt="connect-icon"
+                /></a>
+              </li>
+            </ul>
+            <button class="get-resume-btn">Get my resume</button>
+          </div>
+          <ul class="all-skills">
+            <li>
+              <div class="lang-title flex-row">
+                <span>Languages</span>
+                <img src="assets/Union.png" alt="drop down arrow" />
+              </div>
+
+              <ul class="languages flex-column">
+                <li>
+                  <img src="assets/Ellipse 1.png" alt="JavaScript logo" />
+                  <span class="js-html-css">JavaScript</span>
+                </li>
+                <li>
+                  <img src="assets/Ellipse 1-4.png" alt="HTML logo" />
+                  <span class="js-html-css">HTML</span>
+                </li>
+                <li>
+                  <img src="assets/Ellipse 1-5.png" alt="CSS logo" />
+                  <span class="js-html-css">CSS</span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="frame-title flex-row">
+                <span>Frameworks</span>
+                <img src="assets/Union2.png" alt="right arrow" />
+              </div>
+            </li>
+            <hr />
+            <li>
+              <div class="skill-title flex-row">
+                <span>Skills</span>
+                <img src="assets/Union2.png" alt="right-arrow" />
+              </div>
+            </li>
+            <hr />
+          </ul>
+        </article>
+      </section>
+      <section id="contact-form" class="contact-form flex-column">
+        <article class="contact-me">
+          <h2>Contact me</h2>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it!
+          </p>
+        </article>
+        <form id="form" action="https://formspree.io/f/mzbqjznk" method="post">
+          <ul class="formInputItems flex-row">
+            <li>
+              <label for="name" hidden>Full name</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Lorem Ipsum"
+                maxlength="30"
+                required
+              />
+            </li>
+            <li>
+              <label for="email" hidden>Email address</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="loremipsum@gmail.com"
+                required
+              />
+            </li>
+            <li>
+              <label for="message" hidden>Message area</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here..."
+                required
+                maxlength="500"
+              ></textarea>
+            </li>
+            <li><div class="error-element"></div></li>
+            <li>
+              <input
+                id="get-in-touch-button"
+                type="submit"
+                value="Get in touch"
+              />
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <div class="detail-container">
+      <div class="detail-popup hide">
+        <img
+          class="close-button"
+          src="assets/detailCloseIcon.png"
+          alt="Close button"
+        />
+        <div class="title"></div>
+
+        <ul class="info"></ul>
+        <p class="desc"></p>
+        <div class="right">
+          <ul class="skills"></ul>
+          <hr class="hr" />
+          <button>
+            <span>See live</span>
+            <img src="assets/seeLiveIcon.png" alt="See live" />
+          </button>
+          <button>
+            <span>See source</span>
+            <img width="16px" src="assets/Vector.png" alt="See source" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
